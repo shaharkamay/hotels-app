@@ -1,10 +1,14 @@
 import React from "react";
+import '../../hotel-page.scss'
 
 class HotelPage extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
             <div>
-                HotelPage
+                {this.props.hotel.name}
             </div>
         )
     }

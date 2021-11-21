@@ -6,7 +6,7 @@ class HotelCard extends React.Component {
     }
     render() {
         return (
-            <div className="HotelCard">
+            <div className="hotel-card">
                 <img src={this.props.hotelImage} />
                 <h2>{this.props.hotelName}</h2>
             </div>

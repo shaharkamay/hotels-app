@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap');
+
+
+:root {
+  --font-title: 'Secular One', sans-serif;
+  --font-text: 'Rubik', sans-serif;
+
+  --radius: 5px;
+  --gap: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+  font-family: var(--font-text);
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.hotels-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 45%;
+  display: flex;
+  gap: var(--gap);
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.541);
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 12px;
+  border-radius: var(--radius);
+  
+  h2 {
+    font-family: var(--font-title);
+    font-size: 1rem;
+  }
+}
