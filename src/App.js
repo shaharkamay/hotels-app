@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import HotelsGallery from "./core/components/HotelsGallery";
+import HotelPage from "./core/components/HotelPage";
+import CallNowButton from "./core/components/CallNowButton";
+import hotelsData from "./static/hotels";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HotelsGallery hotelsData={hotelsData} />
+      <HotelPage />
+      <CallNowButton />
     </div>
   );
 }
