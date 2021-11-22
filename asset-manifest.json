@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff51ea41.chunk.css",
-    "main.js": "/static/js/main.1391ce5c.chunk.js",
-    "main.js.map": "/static/js/main.1391ce5c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9d48881b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9d48881b.js.map",
-    "static/js/2.c4081878.chunk.js": "/static/js/2.c4081878.chunk.js",
-    "static/js/2.c4081878.chunk.js.map": "/static/js/2.c4081878.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.ff51ea41.chunk.css.map": "/static/css/main.ff51ea41.chunk.css.map",
-    "static/js/2.c4081878.chunk.js.LICENSE.txt": "/static/js/2.c4081878.chunk.js.LICENSE.txt"
+    "main.css": "/hotels-app/static/css/main.2a85159e.chunk.css",
+    "main.js": "/hotels-app/static/js/main.0b33ec96.chunk.js",
+    "main.js.map": "/hotels-app/static/js/main.0b33ec96.chunk.js.map",
+    "runtime-main.js": "/hotels-app/static/js/runtime-main.d9440ca3.js",
+    "runtime-main.js.map": "/hotels-app/static/js/runtime-main.d9440ca3.js.map",
+    "static/js/2.c4081878.chunk.js": "/hotels-app/static/js/2.c4081878.chunk.js",
+    "static/js/2.c4081878.chunk.js.map": "/hotels-app/static/js/2.c4081878.chunk.js.map",
+    "index.html": "/hotels-app/index.html",
+    "static/css/main.2a85159e.chunk.css.map": "/hotels-app/static/css/main.2a85159e.chunk.css.map",
+    "static/js/2.c4081878.chunk.js.LICENSE.txt": "/hotels-app/static/js/2.c4081878.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d48881b.js",
+    "static/js/runtime-main.d9440ca3.js",
     "static/js/2.c4081878.chunk.js",
-    "static/css/main.ff51ea41.chunk.css",
-    "static/js/main.1391ce5c.chunk.js"
+    "static/css/main.2a85159e.chunk.css",
+    "static/js/main.0b33ec96.chunk.js"
   ]
 }
