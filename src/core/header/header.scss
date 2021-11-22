@@ -1,0 +1,104 @@
+/*
+header
+*/
+header {
+    background-color: var(--background);
+    padding: 1em 0;
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+.mobile-nav {
+    width: 40%;
+    text-align: left;
+}
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--clr-accent);
+    transition: opacity 250ms ease;
+}
+
+.hamburger {
+    width: 50%;
+    height: 3px;
+    display: block;
+    margin: 3px auto;
+    background-color: var(--clr-light);
+}
+
+
+.logo {
+    width: 20%;
+    margin: 0 auto;
+}
+.logo-img {
+    filter: var(--inverted);
+    vertical-align: bottom;
+    height: 2.5em;
+    aspect-ratio: 1 / 1;
+}
+
+.theme {
+    width: 40%;
+    text-align: right;
+}
+
+.select-theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--foreground);
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+.select-theme option {
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+.theme-icon::after {
+    content: var(--theme-icon);
+    color: var(--foreground)
+}
+
+.nav {
+    display: none;
+}
+.nav > * + * {
+    margin-top: var(--margin-top-element);
+}
+.nav--visible {
+    display: block;
+    margin-top: var(--margin-top-element);
+}
+
+.nav__list {
+    list-style: none;
+}
+.nav__list > * + * {
+    margin-top: var(--margin-top-element);
+}
+/* .nav__item {
+    margin-top: 0.5em;
+} */
+.nav__link {
+    text-decoration: none;
+    color: var(--foreground);
+    cursor: pointer;
+}
+.nav__link:hover,
+.nav__link:focus {
+    opacity: 0.75;
+}
+
+.logo-and-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}

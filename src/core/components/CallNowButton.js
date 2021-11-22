@@ -1,11 +1,12 @@
 import React from "react";
 
 class CallNowButton extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
-            <div>
-                CallNowButton
-            </div>
+            <button className="callBtn">התקשר עכשיו {this.props.hotel.phone}</button>
         )
     }
 }

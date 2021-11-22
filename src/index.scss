@@ -2,11 +2,53 @@
 
 
 :root {
+  --clr-light: #F1F1F1;
+  --clr-dark: #2E323F;
+  --clr-primary: #d0d3db;
+  --clr-secondary: #7d86a3;
+  --clr-accent: #06F;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
   --font-title: 'Secular One', sans-serif;
   --font-text: 'Rubik', sans-serif;
 
   --radius: 5px;
   --gap: 1rem;
+
+  --theme-icon: "☀";
+}
+.theme-dark {
+  --clr-light: #F1F1F1;
+  --clr-dark: #2E323F;
+  --clr-primary: #3B4050;
+  --clr-secondary: #6F737F;
+  --clr-accent: #06F;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+
+  --theme-icon: "🌛︎";
+
+  --inverted: invert(1) hue-rotate(180deg);
+
+}
+@media (prefers-color-scheme: dark) {
+  .theme-auto {
+    --clr-light: #F1F1F1;
+    --clr-dark: #2E323F;
+    --clr-primary: #3B4050;
+    --clr-secondary: #6F737F;
+    --clr-accent: #06F;
+  
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+  
+    --theme-icon: "🌛︎";
+  
+    --inverted: invert(1) hue-rotate(180deg);
+  }
 }
 
 *,
@@ -32,6 +74,9 @@ img {
 body {
   font-family: var(--font-text);
 }
+#root > div {
+  background-color: var(--background);
+}
 
 .container {
   margin: 0 auto;
@@ -47,7 +92,6 @@ body {
 }
 
 .hotel-card {
-  width: 45%;
   display: flex;
   gap: var(--gap);
   flex-direction: column;
@@ -57,9 +101,17 @@ body {
   padding: 1em;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 12px;
   border-radius: var(--radius);
+  background-color: var(--clr-secondary);
   
   h2 {
     font-family: var(--font-title);
     font-size: 1rem;
   }
+}
+.card-link{
+  width: 45%;
+  text-decoration: none;
+  color: #0f0f11;
+  display: flex;
+  justify-content: space-between;
 }

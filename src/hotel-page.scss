@@ -1,3 +1,57 @@
-body {
-    background-color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap');
+
+.hotel-page-container{
+    width: 90%;
+    max-width: 1200px;
+    border: 1px solid rgba(71, 65, 65, 0.377);
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: var(--radius);
+    padding: 1em;
+    text-align: right;
+    background-color: var(--clr-secondary);
+}
+.hotel-content-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.hotel-content-container h1 {
+    font-family: var(--font-title);
+}
+hr{
+    border-top: 5px solid var(--foreground);
+    width: 100%;
+}
+/* CSS */
+.callBtn {
+  align-items: center;
+  border-radius: var(--radius);
+  background-color: var(--clr-accent);
+  border: 2px solid var(--clr-accent);
+  box-sizing: border-box;
+  color: var(--clr-light);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  min-width: 140px;
+  padding: .8em 2em;
+  text-align: center;
+  transition: all .3s;
+  max-width: 25rem;
+  align-self: flex-end;
+}
+.callBtn:hover,
+.callBtn:focus {
+  color: var(--clr-accent);
+  background-color: var(--clr-light);
+}
+.callBtn:active {
+  opacity: .75;
 }
