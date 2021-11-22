@@ -115,3 +115,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: 700pX) {
+  .card-link {
+    width: 20%;
+  }
+}

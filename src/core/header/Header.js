@@ -27,7 +27,7 @@ class Header extends React.Component {
                                 <span class="hamburger"></span>
                             </button>
                         </div>
-                        <Link to="/" className="logo">🏠</Link>
+                        <Link to="/hotels-app" className="logo">🏠</Link>
                         <div class="theme">
                             <label id="theme-icon" class="theme-icon"></label>
                             <select class="select-theme" id="select-theme">
@@ -43,13 +43,13 @@ class Header extends React.Component {
                     
                     <nav className={`nav row ${this.state.isNavOpen ? 'nav--visible' : ''}`}>
                         <ul class="nav__list nav--primary row">
-                            <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                            <li class="nav__item"><a href="/analytics" class="nav__link">Analytics</a></li>
-                            <li class="nav__item"><a href="/dashboard" class="nav__link">Dashboard</a></li>
+                            <li class="nav__item"><Link to="/hotels-app" className="nav__link">Home</Link></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Analytics</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Dashboard</a></li>
                         </ul>
                         <ul class="nav__list nav--secondary row">
-                            <li class="nav__item"><a href="/log-in" class="nav__link" id="log-in-link">Log In</a></li>
-                            <li class="nav__item"><a href="/sign-up" id="sign-up-link" class="nav__link link--button">Sign Up</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link" id="log-in-link">Log In</a></li>
+                            <li class="nav__item"><a href="#" id="sign-up-link" class="nav__link link--button">Sign Up</a></li>
                         </ul>
                     </nav>
                 </div>

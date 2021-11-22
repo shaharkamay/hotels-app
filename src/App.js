@@ -23,7 +23,7 @@ class App extends React.Component {
                 <Header />
                 <Routes>
                   {/* Main Route */}
-                  <Route path="/" element={[<HotelsGallery hotelsData={hotelsData} />]} />
+                  <Route path="/hotels-app" element={[<HotelsGallery hotelsData={hotelsData} />]} />
 
                   {/* Hotels Routes */}
                   {hotelsData.map((hotelObj, index) => {
