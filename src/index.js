@@ -12,9 +12,7 @@ import ThemeContext from './Context/ThemeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContext.Provider value={localStorage.getItem('theme') || 'theme-auto'}>
-      <App />
-    </ThemeContext.Provider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -11,16 +11,18 @@ import kebabCase from "./helpers/kebab-case";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { theme: 'theme-auto' };
   }
-
+  themeChange = (theme) => {
+    localStorage.setItem('theme', theme);
+    this.setState({ theme });
+  }
   render() {
     return (
-      <ThemeContext.Consumer>
-        {(context) => {
-          return (
-            <div className={context}>
+      <ThemeContext.Provider value={localStorage.getItem('theme') || 'theme-auto'}>
+        <div className={this.state.theme}>
               <BrowserRouter>
-                <Header />
+                <Header themeChange={this.themeChange} />
                 <Routes>
                   {/* Main Route */}
                   <Route path="/hotels-app" element={[<HotelsGallery hotelsData={hotelsData} />]} />
@@ -33,10 +35,7 @@ class App extends React.Component {
                 
               </BrowserRouter>
             </div>
-          )
-        }}
-      </ThemeContext.Consumer>
-        
+      </ThemeContext.Provider>
     );
   }
 }

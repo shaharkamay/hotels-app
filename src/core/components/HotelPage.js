@@ -10,21 +10,26 @@ class HotelPage extends React.Component {
     }
     render() {
         return (
-            <div className={`hotel-page-container`}>
-                <div className="hotel-content-container ">
-                    <h1>{this.props.hotel.name}</h1>
-                    <hr/>
-                    <img className="hotelImg" src={this.props.hotel.img} />
-                    <p>רחוב: {this.props.hotel["street name"]}</p>
-                    <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-                    <CallNowButton hotel={this.props.hotel} />
-                    {/* <Context.Consumer>
-                        
-                        {(value) => <span>{value}</span>}
-                        
-                    </Context.Consumer> */}
-                </div>
-            </div>
+            <ThemeContext.Consumer>
+                {(context) => {
+                return (
+                    <div className={`hotel-page-container ${context}`}>
+                        <div className="hotel-content-container ">
+                            <h1>{this.props.hotel.name}</h1>
+                            <hr/>
+                            <img className="hotelImg" src={this.props.hotel.img} />
+                            <p>רחוב: {this.props.hotel["street name"]}</p>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
+                            <CallNowButton hotel={this.props.hotel} />
+                            {/* <Context.Consumer>
+                                
+                                {(value) => <span>{value}</span>}
+                                
+                            </Context.Consumer> */}
+                        </div>
+                    </div>
+                )}}
+            </ThemeContext.Consumer>
         )
     }
 }
